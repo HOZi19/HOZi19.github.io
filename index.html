@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Jose Angelo Pintor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-page">
+  <div class="intro-container">
+    <h1>Welcome</h1>
+    <p>Grab a coffee ☕ and get to know me.</p>
+    <a href="#" class="enter-btn" id="enterBtn">Enter Portfolio</a>
+  </div>
+
+  <script>
+    const enterBtn = document.getElementById("enterBtn");
+    enterBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "main.html";
+      }, 800);
+    });
+  </script>
+</body>
+</html>
